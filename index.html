@@ -13,6 +13,7 @@
       height: 100vh;
       background-color: #f0f2f5;
       margin: 0;
+      flex-direction: column;
     }
     .container {
       background-color: white;
@@ -47,6 +48,11 @@
     h2 {
       color: green;
       text-align: center;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #555;
     }
   </style>
 </head>
@@ -89,9 +95,11 @@
 
     <h2 id="result"></h2>
   </div>
+
   <footer>
     Created by <b>Rushikesh Gawai</b>
   </footer>
+
   <script>
     function toggleForm() {
       const selectedCalculator = document.getElementById('calculator').value;
